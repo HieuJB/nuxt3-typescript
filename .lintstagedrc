@@ -1,0 +1,8 @@
+{
+  "**/*.+(js|ts|tsx|vue)": [
+    "yarn lint:js"
+  ],
+  "*": [
+    "yarn lint:prettier"
+  ]
+}

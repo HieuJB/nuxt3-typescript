@@ -1,0 +1,15 @@
+.information {
+  div {
+    p:first-child {
+      font-weight: bold;
+      line-height: 24px;
+      font-weight: 700;
+    }
+
+    p:not(:first-child) {
+      color: $grey-400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

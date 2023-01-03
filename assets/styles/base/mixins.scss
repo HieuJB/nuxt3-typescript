@@ -1,0 +1,60 @@
+$breakpoints: (
+  "xs": (
+    max-width: 767.98px,
+  ),
+  "sm": (
+    min-width: 768px,
+  ),
+  "md": (
+    min-width: 1024px,
+  ),
+  "lg": (
+    min-width: 1200px,
+  ),
+  "xl": (
+    min-width: 1400px,
+  ),
+) !default;
+
+@mixin bp($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. ";
+  }
+}
+
+@mixin landscape {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin flexbox(
+  $direction: row,
+  $align-item: stretch,
+  $justify-content: flex-start,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align-item;
+  justify-content: $justify-content;
+  flex-flow: $direction $wrap;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
