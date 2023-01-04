@@ -7,6 +7,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
+locales/en.json
 .husky/commit-msg
 yarn.lock
 .prettierrc

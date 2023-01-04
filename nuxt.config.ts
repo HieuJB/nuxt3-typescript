@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', 'bootstrap-vue-3/nuxt'],
 
   typescript: {
     shim: false,
@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   ssr: false,
 
-  css: ['@/assets/styles/main.scss'],
+  css: ['@/assets/styles/main.scss', 'bootstrap/dist/css/bootstrap.css'],
 
   vite: {
     css: {
@@ -31,6 +31,4 @@ export default defineNuxtConfig({
     { path: '~/components/layouts', extensions: ['vue'] },
     { path: '~/components/pages/Home', extensions: ['vue'] },
   ],
-
-  buildModules: ['@nuxtjs/stylelint-module'],
 })

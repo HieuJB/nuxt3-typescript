@@ -1,4 +1,4 @@
-import common from './common'
+import common from './test'
 
 export interface ConstantsProps {
   common: typeof common
