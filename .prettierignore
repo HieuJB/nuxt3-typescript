@@ -7,8 +7,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
+.husky/commit-msg
+yarn.lock
 .prettierrc
-commitlint.config.js
+commitlint.config.cjs
 package.json
 tsconfig.json
 .output

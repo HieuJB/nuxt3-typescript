@@ -2,5 +2,5 @@
   <AskAndAnswer />
   <Transaction />
   <BannerImage />
-  Dsadasdsadsdsdsaadsadsadsadsadsaddsadddsadassadsasadsadwqdqwdwqdq
+  Dsadasdsadsdsdsdasdaaadsadsadsadsadsaddsadddsadassadsasadsadwqdqwdwqdq
 </template>
