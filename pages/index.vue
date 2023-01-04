@@ -2,5 +2,4 @@
   <AskAndAnswer />
   <Transaction />
   <BannerImage />
-  Dasdsadsa
 </template>
