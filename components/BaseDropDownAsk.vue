@@ -1,5 +1,5 @@
 <template>
-  <div v-bind="$attrs" class="tw-p-6">
+  <div v-bind="$attrs">
     <div
       class="tw-w-full tw-flex tw-justify-between hover:tw-bg-grey100 tw-cursor-pointer"
       @click="handleShownDetail">

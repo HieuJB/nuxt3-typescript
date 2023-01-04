@@ -7,6 +7,7 @@
       <BaseDropDownAsk
         v-for="(item, index) in QANDA"
         :key="index"
+        class="tw-p-6"
         :label="item">
         <div class="tw-mt-[10px] tw-text-sm">
           <BaseText>

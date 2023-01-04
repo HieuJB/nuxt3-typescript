@@ -1,79 +1,27 @@
 <template>
-  <section class="buy-sell">
-    <div class="container">
-      <div class="row">
-        <div class="col px-0 d-flex align-items-center">
-          <div class="left-part">
-            <div class="title">
-              Mua & Bán tiền mã <br />
-              hoá chỉ trong vài phút
-            </div>
-            <div class="message">
-              Tham gia sàn giao dịch tiền mã hoá nhanh chóng và an toàn nhất
-              <br />
-              Việt Nam
-            </div>
-            <div class="button">
-              <button>Khám phá</button>
-            </div>
-          </div>
-        </div>
-        <div class="col px-0">
-          <div class="right-part ratio">
-            <img src="@/static/image/illustration.png" />
-          </div>
-        </div>
+  <div class="tw-mx-[16px] md:tw-mx-[120px] lg:tw-mx-[240px] tw-my-[40px]">
+    <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2">
+      <div
+        class="tw-flex tw-flex-col tw-justify-items-center tw-self-center tw-items-start">
+        <BaseHeading class="tw-font-bold tw-text-2xl lg:tw-text-5xl">
+          Mua & Bán tiền mã hoá chỉ trong vài phút</BaseHeading
+        >
+        <BaseText class="tw-text-sm lg:tw-text-base"
+          >Tham gia sàn giao dịch tiền mã hoá nhanh chóng và an toàn nhất Việt
+          Nam</BaseText
+        >
+        <BaseButton
+          class="tw-block tw-bg-yellow800 tw-text-grey900 tw-text-sm tw-px-[50px] tw-py-[5px] md:tw-py-[14px] md:tw-px-[78px] tw-rounded-md"
+          >Khám phá</BaseButton
+        >
+      </div>
+      <div class="tw-mt-10">
+        <BaseImage :src="IlLU" />
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
-<style lang="scss" scoped>
-.buy-sell {
-  background: #fafafa;
-  .container {
-    max-width: 1440px;
-    .row {
-      .col {
-        .left-part {
-          padding: 68px 0px;
-          .title {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 59px;
-            color: #000000;
-          }
-          .message {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #51525c;
-            padding: 8px 0px 32px;
-          }
-          .button {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 20px;
-            color: #18181b;
-            button {
-              padding: 14px 78px;
-              background: #faac2e;
-              border-radius: 8px;
-              border: none;
-            }
-          }
-        }
-      }
-      .right-part {
-        --bs-aspect-ratio: 64.086%;
-      }
-    }
-  }
-}
-</style>
+<script setup lang="ts">
+import IlLU from '@/static/image/illustration.png'
+</script>

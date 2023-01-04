@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', 'bootstrap-vue-3/nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    'bootstrap-vue-3/nuxt',
+    'nuxt-swiper',
+  ],
 
   typescript: {
     shim: false,

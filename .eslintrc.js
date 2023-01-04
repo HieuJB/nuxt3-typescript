@@ -73,6 +73,7 @@ module.exports = {
     'no-undef': ['off'],
     'nuxt/no-cjs-in-config': 'off',
     'vue/no-parsing-error': 0,
+    'vue/attribute-hyphenation': 0,
   },
 }
 

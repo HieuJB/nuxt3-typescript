@@ -1,101 +1,33 @@
 <template>
-  <div class="header">
-    <div class="container-fluid px-0">
-      <div class="watch-header">
-        <div class="watch-header__left">
-          <div class="watch-header__left__name">
-            <img src="@/static/image/logo.png" />
-          </div>
-          <div class="watch-header__left__menu">
-            <div class="nav-item dropdown">
-              <a
-                id="menu-deal"
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Giao dịch
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="menu-deal">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
-            <div class="nav-item dropdown">
-              <a
-                id="menu-support"
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Hỗ trợ
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="menu-support">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="watch-header__right">
-          <button type="button">Liên kết ví</button>
-        </div>
+  <div
+    class="tw-px-6 tw-py-4 tw-flex tw-items-center tw-border tw-border-grey100">
+    <div class="tw-flex">
+      <BaseImage
+        class="tw-block md:tw-hidden tw-w-6 tw-h-6 tw-mr-2"
+        :src="MENU" />
+      <BaseImage class="tw-h-6 md:tw-h-8" :src="LOGO" />
+    </div>
+    <div class="tw-w-full tw-flex tw-justify-between">
+      <div class="tw-flex tw-items-center">
+        <BaseDropDownAsk
+          class="tw-mx-20 tw-w-[90px] tw-hidden md:tw-block"
+          label="Giao dịch">
+        </BaseDropDownAsk>
+        <BaseDropDownAsk
+          class="tw-hidden tw-w-[90px] md:tw-block"
+          label="Hỗ trợ">
+        </BaseDropDownAsk>
       </div>
+
+      <BaseButton
+        class="tw-bg-yellow800 tw-py-[5px] tw-px-[28px] tw-text-[#ffffff] md:tw-text-grey900 md:tw-py-[14px] md:tw-px-12 tw-rounded-md tw-text-sm"
+        >Liên kết ví</BaseButton
+      >
     </div>
   </div>
 </template>
 
-<style lang="scss">
-.watch-header {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  background: #ffffff;
-  border-bottom: 1px solid #f4f4f5;
-  &__left {
-    display: flex;
-    &__name {
-      padding: 24px 94px 24px 24px;
-    }
-    &__menu {
-      display: flex;
-      gap: 27px;
-      padding: 28px 0px;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      align-items: center;
-      color: #18181b;
-    }
-  }
-  &__right {
-    padding: 16px 24px 16px 0px;
-    button {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 14px 48px;
-      background: #faac2e;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      color: #18181b;
-      border-radius: 8px;
-      border: none;
-    }
-  }
-}
-</style>
+<script setup lang="ts">
+import LOGO from '@/static/image/logo.png'
+import MENU from '@/static/image/menu.png'
+</script>
